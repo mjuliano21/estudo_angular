@@ -1,0 +1,16 @@
+<h2>Cadastro de tarefaz</h2>
+
+<form class="form">
+    <div class="form-group">        
+        <label for="nomeDaTarefa">Nome
+        </label>
+        <input class="form-control" id="nomeDaTarefa" ng-model="tarefa.nome" placeholder="Nome da tarefa" required type="text">
+        <label for="dataDaTarefa">Data da tarefa
+        </label>
+        <input class="form-control" id="dataDaTarefa" ng-model="tarefa.data" placeholder="Data da tarefa" required type="string" >
+    </div>    
+    <div>
+        <button class="btn btn-primary" ng-click="salvar(tarefa)" type="button">Salvar</button>
+        <button class="btn btn-default" ng-click="cancelar()" type="button">Cancelar</button>
+    </div>
+</form>
